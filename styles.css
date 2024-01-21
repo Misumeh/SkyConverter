@@ -1,3 +1,13 @@
+@media screen and (max-width: 768px) {
+    /* Estilos para pantallas pequeñas */
+    body {
+        font-size: 14px;
+    }
+
+    #mainSection {
+        margin: 20px auto;
+    }
+}
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;

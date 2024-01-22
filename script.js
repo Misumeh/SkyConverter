@@ -1,6 +1,6 @@
 async function convertSky() {
     const inputFile = document.getElementById('archivoEntrada').files[0];
-    const selectedVersion = document.getElementById('versionSelector').selectedOptions[0].text;
+    const selectedVersion = document.getElementById('versionSelector');
 
     if (inputFile) {
         try {
@@ -25,7 +25,8 @@ async function convertSky() {
                     const packMetaTextWithoutBOM = packMetaText.replace(/^\uFEFF/, '');
 
                     const packMetaJSON = JSON.parse(packMetaTextWithoutBOM);
-                    packMetaJSON.pack.pack_format = parseInt(selectedVersion);
+                    //console.log(selectedVersion.value)
+                    packMetaJSON.pack.pack_format = parseInt(selectedVersion.value);
                     zip.remove(packMetaPath);
                     zip.file(packMetaPath, JSON.stringify(packMetaJSON, null, 4));
                 } catch (jsonError) {
@@ -40,13 +41,14 @@ async function convertSky() {
             }
 
             // Add "credits.txt" file to the zip in the main folder
-            zip.file('credits.txt', "Thank you for using my sky converter, if you want to support me monetarily to continue making more useful content for you, support me with a donation at: https://ko-fi.com/misumeh");
+            zip.file('credits.txt', "Thank you for using my sky converter, if you want to support me monetarily to continue making more useful content for you, support me with a donation at: https://ko-fi.com/misumeh ");
+            zip.file('owo.txt', "owo whats this? notices your packy wacky :3 -XCRunnerS");
 
             // Create a new compressed file
             const newZip = await zip.generateAsync({ type: 'blob' });
 
             // Create a new name for the file
-            const newName = `${inputFile.name.replace('.zip', '')} Converted ${selectedVersion}.zip`;
+            const newName = `${inputFile.name.replace('.zip', '')} Converted ${selectedVersion.selectedOptions[0].text}.zip`;
 
             // Download the new file with the new name
             const url = URL.createObjectURL(newZip);

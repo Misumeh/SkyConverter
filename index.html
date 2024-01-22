@@ -14,45 +14,49 @@
 
     <header>
         <div class="logo">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_Qf73tMWTeWfgZi9CTcndSHODDM1hrT8MIpoD9o3P_CLQQcMzPZV9t4a-btSKxXn8Lx4xwjO4IoidZ51WRpejCA23lSUzuCbjC-kmL-wyUVox0rXbnyqk0PuvAF3lJOpUQN1N8luoVS_V0P2UoXNB9-Fcf6cFloqy06mED4OSQSdc_S1DgK0K4MoeTp5h/s1600/Sky%20Converter%20Logo.png" alt="Minecraft Sky Converter Logo">
+		<a href="#mainSection" onclick="scrollToTop()">
+                   <img src="https://github.com/Misumeh/SkyConverter/blob/main/favicon.png?raw=true" alt="Minecraft Sky Converter Logo">
         </div>
             <nav>
         <ul>
-            <li><a href="#mainSection"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="#featuresSection"><i class="fas fa-cogs"></i> Features</a></li>
+                       <li><a href="#featuresSection"><i class="fas fa-cogs"></i> Features</a></li>
             <li><a href="#compatibilitySection"><i class="fas fa-check"></i> Compatibility</a></li>
             <li><a href="#downgradeSection"><i class="fas fa-arrow-down"></i> Downgrade</a></li>
             <li><a href="#donationSection"><i class="fas fa-donate"></i> Donate</a></li>
         </ul>
     </nav>
-</header>
-
-    <section id="mainSection">
-        <div class="file-input">
-            <label for="archivoEntrada" class="file-label">
-                <i class="fas fa-upload"></i> Upload File
-            </label>
-            <input type="file" id="archivoEntrada" accept=".zip">
-        </div>
-        <label for="versionSelector">Select the version:</label>
-        <select id="versionSelector">
-            <option value="2">1.9–1.10.2</option>
-            <option value="3">1.11–1.12.2</option>
-            <option value="4">1.13–1.14.4</option>
-            <option value="6">1.16.2–1.16.5</option>
-            <option value="7">1.17–1.17.1</option>
-            <option value="8">1.18–1.18.2</option>
-            <option value="13">1.19.4</option>
-            <option value="15" selected>1.20–1.20.1</option>
-            <option value="18">1.20.2</option>
-            <option value="22">1.20.3–1.20.4</option>
-        </select>
-        <button onclick="convertSky()" class="convert-btn">
-            <i class="fas fa-magic"></i> Convert
+	<button class="discord-btn" onclick="joinDiscord()">
+          <a href="http://discord.misumeh.com/" target="_blank" "><i class="fab fa-discord"></i> Join Discord</a>  
         </button>
-    </section>
+</header>
+<div id="logoContainer">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_Qf73tMWTeWfgZi9CTcndSHODDM1hrT8MIpoD9o3P_CLQQcMzPZV9t4a-btSKxXn8Lx4xwjO4IoidZ51WRpejCA23lSUzuCbjC-kmL-wyUVox0rXbnyqk0PuvAF3lJOpUQN1N8luoVS_V0P2UoXNB9-Fcf6cFloqy06mED4OSQSdc_S1DgK0K4MoeTp5h/s1600/Sky%20Converter%20Logo.png" alt="Sky Converter Logo">
+</div>
+    <section id="mainSection">
+	         <div class="file-input">
+        <label for="archivoEntrada" class="file-label">
+            <i class="fas fa-upload"></i> Upload File
+        </label>
+        <input type="file" id="archivoEntrada" accept=".zip">
+    </div>
+    <label for="versionSelector">Select the version:</label>
+    <select id="versionSelector">
+        <option value="2">1.9–1.10.2</option>
+        <option value="3">1.11–1.12.2</option>
+        <option value="4">1.13–1.14.4</option>
+        <option value="6">1.16.2–1.16.5</option>
+        <option value="7">1.17–1.17.1</option>
+        <option value="8">1.18–1.18.2</option>
+        <option value="13">1.19.4</option>
+        <option value="15" selected>1.20–1.20.1</option>
+        <option value="18">1.20.2</option>
+        <option value="22">1.20.3–1.20.4</option>
+    </select>
+    <button onclick="convertSky()" class="convert-btn">
+        <i class="fas fa-magic"></i> Convert
+    </button>
+</section>
 
-<!-- Add this in the body section of your HTML -->
 <div id="featuresGrid">
     <section id="featuresSection" class="feature">
         <i class="fas fa-cogs"></i>
@@ -100,13 +104,7 @@
         </button>
     </a>
 </section>
-
-
-
 </div>
-
-
-
     <footer>
         <div class="social-icons">
             <a href="https://twitter.com/Misumeh" class="icon" title="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
@@ -115,12 +113,8 @@
         </div>
     <p>&copy; 2024 Misumeh. All rights reserved. | By a Creator, for Creators.</p>
 </footer>
-
-
     <script src="jszip.min.js"></script>
     <script src="pako.min.js"></script>
     <script src="script.js"></script>
-
 </body>
-
 </html>

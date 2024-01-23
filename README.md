@@ -10,8 +10,6 @@ The Minecraft Sky Converter is a web-based tool that allows users to easily modi
 
 - **Optifine Integration**: Automatically transforms the "mcpatcher" folder into "optifine" for seamless integration with Optifine.
 
-- **Customization**: Users can customize the output file name and receive a converted resource pack tailored to their selected Minecraft version.
-
 ## How to Use
 
 1. Upload your Minecraft resource pack in ZIP format.
@@ -28,10 +26,10 @@ A: The converter extracts, modifies, and compresses Minecraft resource packs to 
 A: The converter supports a range of Minecraft versions. Simply select the desired version from the dropdown menu.
 
 ### Q: Is there a way to support the project?
-A: Absolutely! Consider supporting the developer with a donation at [Ko-Fi](https://ko-fi.com/misumeh).
+A: Absolutely! Consider supporting the project with a donation at [Ko-Fi](https://ko-fi.com/misumeh).
 
 ## Contributions
 Contributions are welcome! If you have any ideas, bug fixes, or improvements, feel free to open an issue or submit a pull request.
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License]([LICENSE](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt).

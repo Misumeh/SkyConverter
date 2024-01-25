@@ -5,6 +5,7 @@ li {
 body {
     all: unset;
     font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -179,13 +180,6 @@ footer {
     text-align: left;
     padding: 8px;
 }
-
-.container ul li {
-    width: 100%;
-    text-align: left;
-    padding: 8px;
-}
-
 
 img {
     transition: 0.25s;

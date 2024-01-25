@@ -20,16 +20,31 @@ The Minecraft Sky Converter is a web-based tool that allows users to easily modi
 ## FAQ
 
 ### Q: How does the Minecraft Sky Converter work?
+
 A: The converter extracts, modifies, and compresses Minecraft resource packs to adapt sky textures to different versions.
 
 ### Q: Can I use the converter for any Minecraft version?
+
 A: The converter supports a range of Minecraft versions. Simply select the desired version from the dropdown menu.
 
 ### Q: Is there a way to support the project?
+
 A: Absolutely! Consider supporting the project with a donation at [Ko-Fi](https://ko-fi.com/misumeh).
 
 ## Contributions
+
 Contributions are welcome! If you have any ideas, bug fixes, or improvements, feel free to open an issue or submit a pull request.
 
 ## License
+
 This project is licensed under the [MIT License]([LICENSE](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt).
+
+## Changelog
+
+### version 2.0.0
+
+- reworked HTML
+- reworked CSS
+- reworked JS
+- Literally reworked the entire thing
+- also you can downgrade now

@@ -1,511 +1,225 @@
-@media screen and (max-width: 768px) {
-    /* Estilos para pantallas pequeñas */
-    body {
-        font-size: 14px;
-    }
-
-    #mainSection {
-        margin: 20px auto;
-    }
+li {
+    list-style: none;
 }
-/* Estilos para el logo centrado */
-#logoContainer {
-    text-align: center;
-    margin-top: 60px; /* Ajusta este valor según sea necesario */
-	    transition: margin-top 0.3s ease-in-out; /* Agregamos transición al margen superior */
-}
-
-#logoContainer img {
-    max-width: 50%; /* Ajusta el ancho máximo según sea necesario */
-    height: auto;
-	    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Transiciones para el efecto de agrandar y brillo */
-}
-#logoContainer img:hover {
-    transform: scale(1.05); /* Aumenta el tamaño al hacer hover */
-    filter: brightness(1.2); /* Ajusta el brillo al hacer hover */
-}
-
-/* Resto de tus estilos existentes... */
 
 body {
-	 background-image: url('https://raw.githubusercontent.com/Misumeh/SkyConverter/3f27e68e6521b6bea8adc67d46d860a547869f87/background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    all: unset;
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f1f4f5;
-    color: #2b2d42;
 }
 
 header {
     background-color: #5e38a5;
-    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: Center;
     position: fixed;
     width: 100%;
-    box-sizing: border-box;
 }
 
-.logo img {
-    width: 50px;
-    height: auto;
-	    margin-right: 10px; /* Add margin to the right of the logo */
+.header_item {
+margin-left: 8px;
+margin-right: 8px;
 }
-
-nav ul {
-    list-style: none;
+.navcontainer {
     display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
+    list-style: none;
 }
 
-nav li {
-    text-align: left;
-}
-
-nav a {
-    text-decoration: none;
-    color: #f1f4f5;
+.navitem {
     font-size: 1rem;
-    transition: color 0.3s ease-in-out;
+    padding: 8px;
+    margin: 8px;
 }
 
-nav a:hover {
+a {
+    transition: 0.15s;
+    color: #f1f4f5;
+    text-decoration: none;
+}
+header a:hover{
     color: #281849;
 }
 
-.section {
-    padding: 2rem;
-	 text-align: left;
-
+.navitem:hover {
+    transition: color 0.15s ease-in-out;
+    color: #281849;
 }
 
-.file-input {
+.logo img {
+    width: 48px;
+    height: auto;
+    margin-right: 12px;
+    /* Add margin to the right of the logo */
+}
+
+.logo_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_container img {
+    margin-top: 128px;
+    margin-bottom: 32px;
+    width: 50%;
+    /* deal with this to make it centered im lazy rn */
+}
+
+.main {
+    background-color: #fff;
+    padding: 16px;
+    margin: 16px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    max-width: 800px;
+    width: 90%;
+}
+
+.mainsection {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-image: url('./background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Evita que la imagen de fondo se repita */
+}
+
+.container {
+    max-width: 469px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+}
+
+.container .fas {
+    font-size: 2rem;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.btn {
     display: flex;
     align-items: center;
-    gap: 10px;
-	 text-align: left;
-
-}
-
-.file-label {
-    cursor: pointer;
+    justify-content: center;
     background-color: #5e38a5;
     color: #f1f4f5;
-    padding: 15px;
-    border-radius: 10px;
-    display: flex;
- text-align: left;
-     justify-content: center;
-    align-items: center;
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: .15s;
 }
 
+footer {
+    background-color: #5e38a5;
+    color: #f1f4f5;
+    align-items: Center;
+    text-align: center;
+    padding: 8px;
+    width: 100%;
+}
 
-.file-label i {
-	 text-align: left;
+.social-icons {
+    font-size: 1.5rem;
+}
 
-    margin-right: 50px;
+.social-item {
+    padding: 4px;
+}
+
+.features {
+    display: grid;
+    justify-content: center;
+    margin: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+    margin-bottom: 24px;
+    margin-top: 24px;
 }
 
 #archivoEntrada {
     display: none;
 }
 
+.main .fas {
+    padding-right: 8px;
+}
+
 #versionSelector {
-    padding: 10px;
+    padding: 8px;
     border: 1px solid #5e38a5;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
-.convert-btn {
-    background-color: #5e38a5;
-    color: #f1f4f5;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease-in-out;
+.logo {
+    padding: 0;
 }
 
-.convert-btn i {
-    margin-right: 5px;
-}
-
-.convert-btn:hover {
-    background-color: #98b5bb;
-}
-.discord-btn {
-            background-color: #29184a;
-            color: #f1f4f5;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-			    margin-right: 10px; /* Add margin to the right */
-            transition: background-color 0.3s ease-in-out;
-			    margin-left: auto; /* Push the button to the right */
-    text-align: left; /* Align text to the left */
-            display: flex;
-            align-items: center;
-        }
-
-        .discord-btn i {
-            margin-right: 5px;
-        }
-
-        .discord-btn:hover {
-            background-color: #482772;
-        }
-		
-footer {
-    background-color: #2b2d42;
-    color: #f1f4f5;
-    padding: 1rem;
-    text-align: center;
-}
-
-.social-icons a {
-    color: #f1f4f5;
-    font-size: 1.5rem;
-    margin-right: 10px;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
-
-.social-icons a:hover {
-    color: #281849;
-}
-#mainSection {
-    background-color: #f1f4f5;
-    padding: 20px;
-    margin: 20px auto; /* Ajuste para centrar el box */
-    border-radius: 10px;
-    box-shadow: 0 0 20px rg	ba(0, 0, 0, 0.1);
+.center {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 800px; /* Ajuste para limitar el ancho del box */
-}
-
-#versionSelector {
-    font-size: 1rem;
-    max-width: 150px;
-}
-
-.convert-btn {
-    display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    background-color: #5e38a5;
-    color: #f1f4f5;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease-in-out;
-    max-width: 200px; /* Ajuste para hacer más grande el botón */
-    text-align: center;
-    margin-left: 20px; /* Ajuste para agregar margen entre el select y el botón */
-}
-
-.convert-btn i {
-    margin-right: 10px;
-}
-
-.convert-btn:hover {
-    background-color: #482772;
-}
-/* Add this CSS for smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
-/* Update the CSS for a 2x2 grid layout */
-#featuresGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-	    margin-bottom: 20px;
-
-    margin-top: 20px; /* Adjust the margin as needed */
-}
-
-.feature {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    transition: box-shadow 0.3s;
-    cursor: pointer;
-}
-
-.feature:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-.feature i {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-#featuresSection {
-    margin-top: 50px;
-	
-	
-}
-
-#featuresSection ul {
-    list-style: none;
-    padding: 0;
-    text-align: left; /* Align the list items to the left */
-}
-
-#featuresSection li {
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
-}
-
-#featuresSection li::before {
-    content: '\2022'; /* Bullet point character */
-    font-size: 20px;
-    color: #5e38a5;
-    position: absolute;
-    left: 0;
-}
-
-#featuresSection h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-#featuresSection ul {
-    list-style: none;
-    padding: 0;
-}
-
-#featuresSection li {
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
-}
-
-#featuresSection li::before {
-    content: '\2022'; /* Bullet point character */
-    font-size: 0px;
-    color: #5e38a5;
-    position: absolute;
-    left: 0;
-}
-/* Features Section */
-#featuresSection {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-#featuresSection h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-#featuresSection ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#featuresSection li {
-    font-size: 18px;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-}
-
-#featuresSection li i {
-    margin-right: 10px;
-}
-
-/* Compatibility Section */
-#compatibilitySection {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-#compatibilitySection h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-#compatibilitySection ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#compatibilitySection li {
-    font-size: 18px;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-}
-
-#compatibilitySection li i {
-    margin-right: 10px;
-}
-
-/* General style for sections with lists */
-section {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-section ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-section li {
-    font-size: 18px;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-}
-
-section li i {
-    margin-right: 10px;
-}
-/* Add this style for the grid container */
-#mainSection {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 20px;
-    margin: 30px auto; /* Center the grid */
-}
-
-
-
-/* Rest of your existing styles... */
-
-
-
-
-/* Adjust the styles for each grid box */
-#faqSection,
-#featuresSection,
-#compatibilitySection,
-#downgradeSection {
-    max-width: 380px;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-/* Add hover effect for grid boxes */
-#faqSection:hover,
-#featuresSection:hover,
-#compatibilitySection:hover,
-#downgradeSection:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-/* Center the main grid vertically */
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-/* Header styling */
-header {
-    background-color: #5e38a5;
-    padding: 1px;
+.container ul li {
     width: 100%;
-	            position: fixed;
-    box-sizing: border-box;
+    text-align: left;
+    padding: 8px;
 }
 
-.logo img {
-    max-width: 100%; /* Ensure the logo does not overflow */
-}
-
-h1 {
-    margin: 0; /* Remove default margin */
-    color: #5e38a5;
-}
-
-/* Footer styling */
-footer {
-    background-color: #5e38a5;
-    padding: 10px;
-    text-align: center;
-    color: #fff;
+.container ul li {
     width: 100%;
-    box-sizing: border-box;
-    margin-top: auto; /* Push the footer to the bottom */
+    text-align: left;
+    padding: 8px;
 }
 
-/* Main grid styling */
-#mainSection {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 25px;
-    margin: 70px auto; /* Center the grid horizontally */
+
+img {
+    transition: 0.25s;
 }
 
-/* Add more specific styling for other sections as needed */
-#donationSection {
-    max-width: 380px;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease-in-out;
+img:hover {
+    transform: scale(1.05);
+    /* Aumenta el tamaño al hacer hover */
+    filter: brightness(1.1);
+    /* Ajusta el brillo al hacer hover */
 }
 
-#donationSection:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+.features_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-#donateButton {
-    background-color: #5e38a5;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 15px;
+.auto {
+    margin: auto;
 }
 
-#donateButton:hover {
-    background-color: #482772;
+.btn:hover {
+    color: white;
+    background-color: #281849;
 }
 
-#donationSection .fas.fa-donate {
-    font-size: 36px;
+.btn a:hover{
+    color: white;
+}
+
+.donations{
+    min-width: 90%;
+    margin-bottom: 32px;
 }

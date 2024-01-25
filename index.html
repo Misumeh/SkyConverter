@@ -11,111 +11,132 @@
 </head>
 
 <body>
-
     <header>
-        <div class="logo">
-		<a href="#mainSection" onclick="scrollToTop()">
-                   <img src="https://github.com/Misumeh/SkyConverter/blob/main/favicon.png?raw=true" alt="Minecraft Sky Converter Logo">
+        <div class="logo header_item">
+            <img src="https://github.com/Misumeh/SkyConverter/blob/main/favicon.png?raw=true"
+                alt="Minecraft Sky Converter Logo">
+            <a href="#mainSection" onclick="scrollToTop()">
+            </a>
         </div>
-            <nav>
-        <ul>
-                       <li><a href="#featuresSection"><i class="fas fa-cogs"></i> Features</a></li>
-            <li><a href="#compatibilitySection"><i class="fas fa-check"></i> Compatibility</a></li>
-            <li><a href="#downgradeSection"><i class="fas fa-arrow-down"></i> Downgrade</a></li>
-            <li><a href="#donationSection"><i class="fas fa-donate"></i> Donate</a></li>
+        <ul class="navcontainer header_item">
+            <li class="navitem"><a href="#features"><i class="fas fa-cogs"></i> Features</a></li>
+            <li class="navitem"><a href="#compatibility"><i class="fas fa-check"></i> Compatibility</a></li>
+            <li class="navitem"><a href="#donations"><i class="fas fa-donate"></i> Donate</a></li>
         </ul>
-    </nav>
-	<button class="discord-btn" onclick="joinDiscord()">
-          <a href="http://discord.misumeh.com/" target="_blank" "><i class="fab fa-discord"></i> Join Discord</a>  
+        <button class="btn header_item" onclick="joinDiscord()">
+            <a href="http://discord.misumeh.com/" target="_blank" "><i class=" fab fa-discord"></i> Join Discord</a>
         </button>
-</header>
-<div id="logoContainer">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_Qf73tMWTeWfgZi9CTcndSHODDM1hrT8MIpoD9o3P_CLQQcMzPZV9t4a-btSKxXn8Lx4xwjO4IoidZ51WRpejCA23lSUzuCbjC-kmL-wyUVox0rXbnyqk0PuvAF3lJOpUQN1N8luoVS_V0P2UoXNB9-Fcf6cFloqy06mED4OSQSdc_S1DgK0K4MoeTp5h/s1600/Sky%20Converter%20Logo.png" alt="Sky Converter Logo">
-</div>
-    <section id="mainSection">
-	         <div class="file-input">
-        <label for="archivoEntrada" class="file-label">
-            <i class="fas fa-upload"></i> Upload File
-        </label>
-        <input type="file" id="archivoEntrada" accept=".zip">
-    </div>
-    <label for="versionSelector">Select the version:</label>
-    <select id="versionSelector">
-        <option value="2">1.9–1.10.2</option>
-        <option value="3">1.11–1.12.2</option>
-        <option value="4">1.13–1.14.4</option>
-        <option value="6">1.16.2–1.16.5</option>
-        <option value="7">1.17–1.17.1</option>
-        <option value="8">1.18–1.18.2</option>
-        <option value="13">1.19.4</option>
-        <option value="15" selected>1.20–1.20.1</option>
-        <option value="18">1.20.2</option>
-        <option value="22">1.20.3–1.20.4</option>
-    </select>
-    <button onclick="convertSky()" class="convert-btn">
-        <i class="fas fa-magic"></i> Convert
-    </button>
-</section>
-
-<div id="featuresGrid">
-    <section id="featuresSection" class="feature">
-        <i class="fas fa-cogs"></i>
-        <h2>Features</h2>
-        <h3>Discover the features of the converter.</h3>
-		<ul>
-        <li><i class="fas fa-check"></i> Easy conversion of Minecraft Sky Files</li>
-        <li><i class="fas fa-check"></i> Supports multiple Minecraft versions</li>
-        <li><i class="fas fa-check"></i> Automatic modification of folder structure</li>
-        <li><i class="fas fa-check"></i> Optifine Mcpatcher Supported</li>
-        <li><i class="fas fa-check"></i> Converts pack.mcmeta to the version selected</li>
-        <li><i class="fas fa-check"></i> User-friendly interface for a seamless experience</li>
-    </ul>
+    </header>
+    <section class="mainsection auto">
+        <div id="logoContainer" class="logo_container">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_Qf73tMWTeWfgZi9CTcndSHODDM1hrT8MIpoD9o3P_CLQQcMzPZV9t4a-btSKxXn8Lx4xwjO4IoidZ51WRpejCA23lSUzuCbjC-kmL-wyUVox0rXbnyqk0PuvAF3lJOpUQN1N8luoVS_V0P2UoXNB9-Fcf6cFloqy06mED4OSQSdc_S1DgK0K4MoeTp5h/s1600/Sky%20Converter%20Logo.png"
+                alt="Sky Converter Logo">
+        </div>
+        <div class="main">
+            <div class="file_input item">
+                <label for="archivoEntrada" class="btn">
+                    <i class="fas fa-upload"></i> Upload File
+                </label>
+                <input type="file" id="archivoEntrada" accept=".zip">
+            </div>
+            <div class="flex item">
+                <label for="versionSelector">Select the version:</label>
+                <select id="versionSelector">
+                    <option value="1">1.6.1–1.8.9</option>
+                    <option value="2">1.9–1.10.2</option>
+                    <option value="3">1.11–1.12.2</option>
+                    <option value="4">1.13–1.14.4</option>
+                    <option value="6">1.16.2–1.16.5</option>
+                    <option value="7">1.17–1.17.1</option>
+                    <option value="8">1.18–1.18.2</option>
+                    <option value="13">1.19.4</option>
+                    <option value="15" selected>1.20–1.20.1</option>
+                    <option value="18">1.20.2</option>
+                    <option value="22">1.20.3–1.20.4</option>
+                </select>
+            </div>
+            <div class="item">
+                <button onclick="convertSky()" class="btn">
+                    <i class="fas fa-magic"></i> Convert
+                </button>
+            </div>
+        </div>
     </section>
-
-    <section id="compatibilitySection" class="feature">
-        <i class="fas fa-check"></i>
-        <h2>Compatibility</h2>
-        <h3>Check which Minecraft versions are supported.</h3>
-		 <ul>
-        <li><i class="fas fa-check"></i> Upgrade to 1.9 – 1.10.2</li>
-        <li><i class="fas fa-check"></i> Upgrade to 1.13 – 1.14.4 </li>
-        <li><i class="fas fa-check"></i> Upgrade to 1.16.2 – 1.16.5</li>
-        <li><i class="fas fa-check"></i> Upgrade to 1.17 - 1.17.1 </li>
-        <li><i class="fas fa-check"></i> Upgrade to 1.18 - 1.18.2 </li>
-        <li><i class="fas fa-check"></i> Upgrade to 1.19.4 </li>
-        <li><i class="fas fa-check"></i> Upgrade to 1.20.1.</li>
-        <li><i class="fas fa-check"></i> Upgrade to 1.20.2 </li>
-        <li><i class="fas fa-check"></i> Upgrade to 1.20.4 </li>
-    </ul>
+    <section class="features_container auto">
+        <section id="features" class="features">
+            <div class="container">
+                <div class="center">
+                    <i class="fas fa-cogs"></i>
+                    <h2>Features</h2>
+                    <h3>Discover the features of the converter.</h3>
+                </div>
+                <div class="center">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Easy conversion of Minecraft Sky Files</li>
+                        <li><i class="fas fa-check"></i> Supports multiple Minecraft versions</li>
+                        <li><i class="fas fa-check"></i> Automatic modification of folder structure</li>
+                        <li><i class="fas fa-check"></i> Optifine Mcpatcher Supported</li>
+                        <li><i class="fas fa-check"></i> Converts pack.mcmeta to the version selected</li>
+                        <li><i class="fas fa-check"></i> User-friendly interface for a seamless experience</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="compatibility" class="container">
+                <div class="center">
+                    <i class="fas fa-check"></i>
+                    <h2>Compatibility</h2>
+                    <h3>Check which Minecraft versions are supported.</h3>
+                </div>
+                <div class="center">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Switch to 1.6.1 – 1.8.9</li>
+                        <li><i class="fas fa-check"></i> Switch to 1.9 – 1.10.2</li>
+                        <li><i class="fas fa-check"></i> Switch to 1.13 – 1.14.4 </li>
+                        <li><i class="fas fa-check"></i> Switch to 1.16.2 – 1.16.5</li>
+                        <li><i class="fas fa-check"></i> Switch to 1.17 - 1.17.1 </li>
+                        <li><i class="fas fa-check"></i> Switch to 1.18 - 1.18.2 </li>
+                        <li><i class="fas fa-check"></i> Switch to 1.19.4 </li>
+                        <li><i class="fas fa-check"></i> Switch to 1.20.1.</li>
+                        <li><i class="fas fa-check"></i> Switch to 1.20.2 </li>
+                        <li><i class="fas fa-check"></i> Switch to 1.20.4 </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div id="donations" class="container donations">
+            <div class="center">
+                <i class="fas fa-donate"></i>
+                <h2>Donations</h2>
+            </div>
+            <p>If you find this converter helpful, consider supporting the development with a small donation. Every
+                contribution is
+                appreciated!</p>
+            <div class="center">
+                <a href="https://ko-fi.com/misumeh" target="_blank" rel="noopener noreferrer">
+                    <button class="btn">
+                        <i class="fas fa-coffee"></i> Support me on Ko-Fi
+                    </button>
+                </a>
+            </div>
+        </div>
     </section>
-
-    <section id="downgradeSection" class="feature">
-        <i class="fas fa-arrow-down"></i>
-        <h2>Downgrade</h2>
- <p>Downgrading is not available in this converter. This tool is designed as an upgrader, converting sky textures to versions 1.6.1 - 1.8.9 and above. Its functionality is focused on upgrading sky textures only, providing a basic and straightforward conversion process.</p>    </section>
-
-<section id="donationSection" class="grid-item">
-     <i class="fas fa-donate"></i>
-        <h2>Donations</h2>
-    <p>If you find this converter helpful, consider supporting the development with a small donation. Every contribution is appreciated!</p>
-    <a href="https://ko-fi.com/misumeh" target="_blank" rel="noopener noreferrer">
-        <button id="donateButton">
-            <i class="fas fa-coffee"></i> Support me on Ko-Fi
-        </button>
-    </a>
-</section>
-</div>
     <footer>
         <div class="social-icons">
-            <a href="https://twitter.com/Misumeh" class="icon" title="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://discord.com/invite/wJWAgKxfrA" class="icon" title="Join our discord"><i class="fab fa-discord"></i></a>
-            <a href="https://www.youtube.com/channel/UCggw7dOBxtMknom1cmFfRyQ" class="icon" title="Subscribe on YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="https://github.com/Misumeh/SkyConverter" class="text" title="Source Code"><i class="fab fa-github"></i></a>
-	</div>
-    <p>&copy; 2024 Misumeh. All rights reserved. | By a Creator, for Creators.</p>
-</footer>
+            <a class="social-item" href="https://twitter.com/Misumeh" class="icon" title="Follow us on Twitter"><i
+                    class="fab fa-twitter"></i></a>
+            <a class="social-item" href="https://discord.com/invite/wJWAgKxfrA" class="icon" title="Join our discord"><i
+                    class="fab fa-discord"></i></a>
+            <a class="social-item" href="https://www.youtube.com/channel/UCggw7dOBxtMknom1cmFfRyQ" class="icon"
+                title="Subscribe on YouTube"><i class="fab fa-youtube"></i></a>
+            <a class="social-item" href="https://github.com/Misumeh/SkyConverter" class="text" title="Source Code"><i
+                    class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2024 Misumeh. All rights reserved. | By a Creator, for Creators.</p>
+    </footer>
     <script src="jszip.min.js"></script>
     <script src="pako.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
+</body>
